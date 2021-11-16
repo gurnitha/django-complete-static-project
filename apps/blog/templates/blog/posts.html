@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Posts{% endblock title %}
+
+{% block content %}
+
+        <!-- breadcrumb-area start -->
+        {% include 'inc/breadcrumb-blog.html' %}
+        <!-- breadcrumb-area end -->
+        <!-- Blog Area Start -->
+        <div class="blog-list pb-100px pt-100px main-blog-page single-blog-page">
+            <div class="container">
+                <div class="row">
+
+                	<!-- Blog -->
+                    <div class="col-lg-8 col-md-12">
+
+                    	<!-- Posts -->
+                    	{% include 'inc/posts.html' %}
+                        <!-- Posts end -->
+
+                        <!--  Pagination Area Start -->
+ 						{% include 'inc/pagination.html' %}
+                        <!--  Pagination Area End -->
+                    </div>
+                    <!-- Blog end -->
+
+                    <!-- Sidebar Area Start -->
+                    {% include 'inc/sidebar-blog.html' %}
+                    <!-- Sidebar Area End -->
+                </div>
+            </div>
+        </div>
+        <!-- Blag Area End -->
+
+{% endblock content %}

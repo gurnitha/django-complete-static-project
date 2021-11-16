@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx" dir="ltr">
+<head>
+
+    {% include 'shared/head.html' %}
+    <title>Hmart | {% block title %}{{block.super}}{% endblock title %}
+</title>
+
+</head>
+<body>
+
+    <!-- Main wrapper -->
+    <div class="main-wrapper">
+
+        <!-- Header -->
+        {% include 'shared/header.html' %}
+        <!-- Header end -->
+
+        <!-- Off canvas -->
+        {% include 'shared/off-canvas.html' %}
+        <!-- Off canvas -->
+
+        <!-- =============SEEN CONTENTS============= -->
+
+        {% block content %}
+        {% endblock content %}
+
+        <!-- =============SEEN CONTENTS END============= -->
+
+        <!-- Footer Area Start -->
+        {% include 'shared/footer.html' %}
+        <!-- Footer Area End -->
+
+
+    </div>
+    <!-- Main wrapper end -->
+
+    <!-- =============POPUP MODALS============= -->
+
+    <!-- Quick view Modal popup -->
+    {% include 'shared/modal-quickview.html' %}
+    <!-- Quick view Modal popup end -->
+
+    <!-- Modal Add to Cart -->
+    {% include 'shared/modal-addtocart.html' %}
+    <!-- Modal Add to Cart end -->
+
+    <!-- Modal wishlist popup -->
+    {% include 'shared/modal-wishlist.html' %}
+    <!-- Modal wishlist popup end -->
+
+    <!-- Modal compare popup -->
+    {% include 'shared/modal-compare.html' %}
+    <!-- Modal compare popup end -->
+
+    <!-- =============POPUP MODALS END============= -->
+
+    <!-- Scripts -->
+    {% include 'shared/scripts.html' %}
+    <!-- Scripts end -->
+</body>
+</html>

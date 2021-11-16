@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+
+        <!-- Slider hero Start -->
+        {% include 'inc/slider-hero.html' %}
+        <!-- Slider hero End -->
+
+        <!-- Banner top Area Start -->
+        {% include 'inc/banner-top.html' %}
+        <!-- Banner top Area End -->
+
+        <!-- Product Area Start -->
+        {% include 'inc/product.html' %}
+        <!-- Product Area End -->
+
+        <!-- Banner lower Area Start -->
+        {% include 'inc/banner-lower.html' %}
+        <!-- Banner lower Area End -->
+
+        <!-- Featured product area start -->
+        {% include 'inc/featured-product.html' %}
+        <!-- Featured product area End -->
+
+        <!-- Banner large Fashion Area Start -->
+        {% include 'inc/banner-large.html' %}
+        <!-- Banner large Fashion Area End -->
+
+        <!-- Features Area Srart -->
+        {% include 'inc/features.html' %}
+        <!-- Features Area End -->
+
+        <!-- Blog area start from here -->
+        {% include 'inc/blog-latest.html' %}
+        <!-- Blog area end here -->
+
+{% endblock content %}

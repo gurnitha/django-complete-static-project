@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Post{% endblock title %}
+
+{% block content %}
+
+        <!-- Breadcrumb-blog-single start -->
+        {% include 'inc/breadcrumb-blog-single.html' %}
+        <!-- Breadcrumb-blog-single end -->
+        <!-- Blog Area Start -->
+        <div class="blog-grid pb-100px pt-100px main-blog-page single-blog-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12">
+
+                        <!-- Post and Tags in between -->
+                        {% include 'inc/post.html' %}
+                        <!-- Post and Tags in between end -->
+
+                        <!-- Comment-blog -->
+                        {% include 'inc/comment-blog.html' %}
+                        <!-- Comment-blog end -->
+                    </div>
+                    <!-- Sidebar Area Start -->
+                    {% include 'inc/sidebar-blog.html' %}
+                    <!-- Sidebar Area End -->
+                </div>
+            </div>
+        </div>
+        <!-- Blag Area End -->
+
+{% endblock content %}

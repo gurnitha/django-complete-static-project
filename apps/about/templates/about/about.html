@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About{% endblock title %}
+
+{% block content %}
+
+        <!-- Breadcrumb-about start -->
+        {% include 'inc/breadcrumb-about.html' %}
+        <!-- Breadcrumb-about end -->
+
+        <!-- About section Start -->
+        {% include 'inc/about-section.html' %}
+        <!-- About section End -->
+
+        <!-- Team Area Start -->
+        {% include 'inc/team.html' %}
+        <!-- Team Area End -->
+
+        <!-- Feature Area Srart 
+        	===NOTE: using features from home/inc/features.html==-->
+        {% include 'inc/features.html' %}
+        <!-- Feature Area End -->
+
+        <!-- Testimonial area start -->
+        {% include 'inc/testimonial.html' %}
+        <!-- Testimonial area end-->
+
+        <!-- Blog area start from here 
+        	===NOTE: using blog-latest from home/inc/blog-latest.html==-->
+        <br><br>
+        {% include 'inc/blog-latest.html' %}
+        <!-- Blog area end here -->
+
+{% endblock content %}

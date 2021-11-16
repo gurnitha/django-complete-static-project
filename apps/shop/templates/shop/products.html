@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Products{% endblock title %}
+
+{% block content %}
+
+        <!-- Breadcrumb-area end -->
+        {% include 'inc/breadcrumb.html' %}
+        <!-- Breadcrumb-area end -->
+
+        <!-- Shop Page Start  -->
+        <div class="shop-category-area pt-100px pb-100px">
+            <div class="container">
+                <div class="row">
+
+                	<!-- Products -->
+                	{% include 'inc/products.html' %}
+                    <!-- Products end -->
+
+                    <!-- Sidebar Area Start -->
+                    {% include 'inc/sidebar.html' %}
+                    <!-- Sidebar Area end -->
+                </div>
+            </div>
+        </div>
+        <!-- Shop Page End  -->
+
+{% endblock content %}
